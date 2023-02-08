@@ -1,2 +1,2 @@
-# portfolio-draft
-A basic HTML Portfolio
+# Basic HTML Portfolio
+A basic HTML example of my portfolio
