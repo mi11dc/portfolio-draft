@@ -1,8 +1,15 @@
 /* CSS Styles */
+:root {
+    --primary-color: #00425A;
+    --secondary-color: #D3D3D3;
+    --default-color: #FFFFFF;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,41 +18,82 @@ body {
 
 a {
     text-decoration: none;
-    color: #00425A;
+    color: var(--primary-color);
 }
   
 ul {
     list-style: none;
 }
 
+/* Header CSS */
 header {
-    background-color: #00425A;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1.35em;
 }
 
-.logo {
+.logo a {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2em;
+    color: var(--secondary-color);
 }
 
-.hero {
-    background-color: #D3D3D3;
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.image {
+    background-color: var(--secondary-color);
     padding: 100px 0;
     text-align: center;
 }
 
-.hero img {
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
+/* Home Page CSS */
+.home {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
 }
 
+.home img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* About Page */
 .about {
-    background-color: #FFFFFF;
+    background-color: var(--default-color);
     padding: 100px 0;
     text-align: center;
 }
@@ -57,28 +105,41 @@ header {
 }
 
 .skills {
-    background-color: #D3D3D3;
+    background-color: var(--secondary-color);
     padding: 100px 0;
     text-align: center;
 }
 
 .skill-item {
-    margin: 20px;
+    margin: 1.5em;
     display: inline-block;
     vertical-align: top;
-    width: 200px;
-    text-align: left;
+    width: 150px;
 }
 
 .skill-name {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0.7em;
 }
 
 .skill-level {
-    height: 20px;
+    height: 1.5em;
     background-color: #00425A;
     margin-bottom: 10px;
+}
+
+#rating span {
+    color: var(--primary-color);
+    opacity: .5;
+    display: inline-block;
+    transform: rotateX(45deg);
+    transform-origin: center bottom;
+}
+
+#rating span.checked {
+    color: var(--primary-color);
+    opacity: 1;
+    transform: rotateX(0deg);
 }
 
 .projects {
@@ -93,7 +154,7 @@ header {
     vertical-align: top;
     width: 300px;
     text-align: left;
-    border: 1px solid #D3D3D3;
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
     padding: 10px;
 }
@@ -118,10 +179,17 @@ header {
 }
 
 .footer {
-    background-color: #D3D3D3;
+    background-color: var(--secondary-color);
     color: #00425A;
     padding: 20px;
     text-align: center;
+}
+
+.button {
+    padding: 0.5em;
+    background-color: var(--default-color);
+    color: var(--primary-color);
+    border: var(--default-color) 1px solid;
 }
 
 
@@ -141,21 +209,7 @@ header {
     font-weight: bold;
   }
   
-  nav ul {
-    display: flex;
-  }
   
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li:first-child {
-    margin-left: 0;
-  }
-  
-  nav ul li a {
-    font-size: 1.2rem;
-  }
   
   .hero {
     display: flex;
