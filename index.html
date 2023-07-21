@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
     <title>Dhaval Shah | Software & Web Developer</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMT2B454QN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZMT2B454QN');
+    </script>
     
 </head>
 <!-- <body oncontextmenu="return false"> -->
@@ -31,7 +41,7 @@
         
     <!-- Home Section -->
     <section id="home" class="home">
-        <img src="/portfolio-draft/images/profile-picture.jpeg" alt="Profile Picture">
+        <img src="/images/profile-picture.jpeg" alt="Profile Picture">
         <!-- <h1>Hi, I'm Dhaval Shah</h1> -->
         <p>An experienced software engineer with a strong desire to create effective and user-friendly software and online solutions.</p>
     </section>
@@ -39,7 +49,7 @@
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
-        <img src="/portfolio-draft/images/about-me-zoom.jpeg" alt="About Me Picture">
+        <img src="/images/about-me-zoom.jpeg" alt="About Me Picture">
         <p>Hi, I'm Dhaval Shah. <br />
             I'm a software developer with over 3 years of experience in developing web applications and software solutions. <br /> 
             I specialize in developing applications using C#, NodeJs, Python, Php, Angular CLI, JavaScript</p>
@@ -138,25 +148,47 @@
             </div>
         </section>
         
+        <!-- Education Section -->
+        <section id="educations" class="educations">
+            <h2>My Education</h2>
+            <div class="education-item">
+                <img class="education-img" src="/images/Humber_Logo_Blue_and_Gold_Centered.svg" alt="Humber College">
+                <h3>Web Development</h3>
+                <p>JAN 2023 - DEC 2023</p>
+                <p>Post Graduate Diploma Certificate</p>
+            </div>
+            <div class="education-item">
+                <img class="education-img" src="/images/Georgian_College_logo.svg" alt="Georgian College">
+                <h3>Big Data Analytics</h3>
+                <p>JAN 2022 - AUG 2022</p>
+                <p>Post Graduate Diploma Certificate</p>
+            </div>
+            <div class="education-item">
+                <img class="education-img" src="images/about-me-zoom.jpeg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac semper neque. Suspendisse vel ex ultricies, feugiat quam at, tempor ex.</p>
+            </div>
+        </section>
+
         <!-- Projects Section -->
-        <!-- <section id="projects" class="projects">
+        <section id="projects" class="projects">
             <h2>My Projects</h2>
             <div class="project-item">
-                <img src="project-1.jpg" alt="Project 1">
+                <img class="project-img" src="/images/about-me.jpeg" alt="Project 1">
                 <h3>Project 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac semper neque. Suspendisse vel ex ultricies, feugiat quam at, tempor ex.</p>
             </div>
             <div class="project-item">
-                <img src="project-2.jpg" alt="Project 2">
+                <img class="project-img" src="/images/profile-picture.jpeg" alt="Project 2">
                 <h3>Project 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac semper neque. Suspendisse vel ex ultricies, feugiat quam at, tempor ex.</p>
             </div>
             <div class="project-item">
-                <img src="project-3.jpg" alt="Project 3">
+                <img class="project-img" src="images/about-me-zoom.jpeg" alt="Project 3">
                 <h3>Project 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac semper neque. Suspendisse vel ex ultricies, feugiat quam at, tempor ex.</p>
             </div>
-        </section> -->
+        </section>
         
         <!-- Contact Section -->
         <section id="contact" class="contact">
@@ -164,13 +196,13 @@
             <div class="contact-form">
                 <form>
                     <!-- <label for="name">Name:</label><br> -->
-                    <input type="text" placeholder="Name" id="name" name="name"><br><br>
+                    <input type="text" class="contact-form-input" placeholder="Name" id="name" name="name"><br><br>
                 
                     <!-- <label for="email">Email:</label><br> -->
-                    <input type="email" placeholder="Email" id="email" name="email"><br><br>
+                    <input type="email" class="contact-form-input" placeholder="Email" id="email" name="email"><br><br>
                 
                     <!-- <label for="message">Message:</label><br> -->
-                    <textarea id="message" name="message" placeholder="Message" rows="5"></textarea><br><br>
+                    <textarea id="message" class="contact-form-input" name="message" placeholder="Message" rows="5"></textarea><br><br>
 
                     <input class="button" type="submit" value="Send">
                 </form>
